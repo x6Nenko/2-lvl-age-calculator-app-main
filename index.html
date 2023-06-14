@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <form action="" class="age-calculator" id="form">
+      <div class="single-input" id="dayHolder">
+        <label for="day" id="dayLabel" class="">Day</label>
+        <input type="text" id="dayInput" name="day" placeholder="DD" class="">
+        <p class="warning-empty-field" id="warningEmptyField">This field is required</p>
+        <p class="specific-warning" id="specificWarning">Must be a valid day</p>
+      </div>
+
+      <div class="single-input" id="monthHolder">
+        <label for="month" class="">Month</label>
+        <input type="text" id="month" name="month" placeholder="MM" class="">
+        <p class="warning-empty-field" id="warningEmptyField">This field is required</p>
+        <p class="specific-warning" id="specificWarning">Must be a valid month</p>
+      </div>
+
+      <div class="single-input" id="yearHolder">
+        <label for="year" class="">Year</label>
+        <input type="text" id="year" name="year" placeholder="YYYY" class="">
+        <p class="warning-empty-field" id="warningEmptyField">This field is required</p>
+        <p class="specific-warning" id="specificWarning">Must be in the past</p>
+      </div>
+    </form>
+
+    <div class="btn-wrapper">
+      <hr>
+      <div class="btn" id="btn" onclick="">
+        <img src="./assets/images/icon-arrow.svg" alt="icon arrow">
+      </div>
+    </div>
+
+    <div class="results">
+      <h1 class="years"><span>--</span> years</h1>
+      <h1 class="months"><span>--</span> months</h1>
+      <h1 class="days"><span>--</span> days</h1>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/x6Nenko">Max I</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
